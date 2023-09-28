@@ -8,5 +8,7 @@ This repository is to build a docker image for ARM as Focalboard has not created
 From the terminal, run the below.
 
 ```bash
-build -f focalboard/docker/Dockerfile --platform linux/arm64 .
+git submodule update --init --recursive
+
+docker build -f focalboard/docker/Dockerfile --platform linux/arm64 .
 ```
